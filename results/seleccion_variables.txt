@@ -1,0 +1,59 @@
+Descartadas por IV < 0.02:
+loan_amnt
+installment
+delinq_2yrs
+mths_since_last_delinq
+mths_since_last_record
+open_acc
+pub_rec
+revol_bal
+total_acc
+pub_rec_bankruptcies
+acc_now_delinq
+collections_12_mths_ex_med
+antiguedad_credito
+emp_anios
+revol_ingreso
+verification_status
+initial_list_status
+
+Descartadas por correlación:
+subgrado_num (se queda) vs int_rate (sale): |r| = 0.99
+dti_con_prestamo (se queda) vs dti (sale): |r| = 0.90
+cuota_ingreso (se queda) vs prestamo_ingreso (sale): |r| = 0.99
+
+Variables finales:
+subgrado_num
+annual_inc
+dti_con_prestamo
+cuota_ingreso
+tot_cur_bal
+total_rev_hi_lim
+revol_util
+mort_acc
+home_ownership
+purpose
+inq_last_6mths
+estado_woe
+ratio_cuentas_abiertas
+falta_revol_util
+falta_mort_acc
+falta_tot_cur_bal
+falta_total_rev_hi_lim
+
+Coeficientes llevados a cero por LASSO (lambda.1se):
+tot_cur_bal
+total_rev_hi_lim
+revol_util
+mort_acc
+home_ownershipOWN
+home_ownershipOTRA
+purposedebt_consolidation
+purposehome_improvement
+purposemajor_purchase
+purposemedical
+purposeother
+purposewedding
+purposeOTRA
+falta_revol_util
+falta_mort_acc
